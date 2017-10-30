@@ -1,0 +1,12 @@
+---
+
+version: '3'
+services:
+
+  skcsystemctl:
+    build: skc-systemctl
+
+    image: skc-centos7-systmectl
+
+    
+    
