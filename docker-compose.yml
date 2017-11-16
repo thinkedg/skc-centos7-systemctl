@@ -8,5 +8,9 @@ services:
 
     image: skc-centos7-systmectl
 
-    
-    
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
