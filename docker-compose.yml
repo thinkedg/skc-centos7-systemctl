@@ -6,7 +6,8 @@ services:
   skcsystemctl:
     build: skc-systemctl
 
-    image: skc-centos7-systmectl
+    image: skc-systmectl-cos7
+    container_name: skc-systemctl
 
     cap_add:
       - SYS_ADMIN
